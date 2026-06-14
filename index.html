@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Prompt', sans-serif; }
+        body { font-family: 'Prompt', sans-serif; overflow-x: hidden; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #fdf2f8; }
         ::-webkit-scrollbar-thumb { background: #fbcfe8; border-radius: 4px; }
@@ -19,7 +21,7 @@
 </head>
 <body class="bg-white text-gray-800 antialiased selection:bg-pink-200 selection:text-pink-900">
 
-    <nav class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b bg-white/90 backdrop-blur-md border-pink-50 md:px-12">
+    <nav class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b bg-white/90 backdrop-blur-md border-pink-50 md:px-12" data-aos="fade-down" data-aos-duration="800">
         <div class="flex items-center gap-2 text-2xl font-bold tracking-tight text-pink-500">
             พลังนักเรียน 
             <span class="flex items-center justify-center w-7 h-7 text-sm text-white bg-pink-500 rounded-full shadow-md shadow-pink-200">2</span>
@@ -44,33 +46,35 @@
             <div class="absolute w-72 h-72 opacity-30 mix-blend-multiply filter blur-3xl rounded-full bg-pink-200 top-10 left-10"></div>
             <div class="absolute w-72 h-72 opacity-20 mix-blend-multiply filter blur-3xl rounded-full bg-pink-300 bottom-10 right-10"></div>
             
-            <div class="relative z-10 max-w-4xl">
-                <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-pink-600 shadow-sm bg-pink-100 rounded-full">
+            <div class="relative z-10 max-w-4xl" data-aos="zoom-in" data-aos-duration="1000">
+                <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-pink-600 shadow-sm bg-pink-100 rounded-full" data-aos="fade-up" data-aos-delay="200">
                     ผู้สมัครสภานักเรียน เบอร์ 2
                 </span>
-                <h1 class="mb-8 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
+                <h1 class="mb-8 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl" data-aos="fade-up" data-aos-delay="300">
                     เคารพทุกความแตกต่าง <br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600">สร้างสมดุลความเท่าเทียม</span> <br>
                     เปิดโอกาสให้ทุกเสียงได้รับการรับฟัง
                 </h1>
-                <p class="max-w-2xl mx-auto mb-10 text-xl font-medium text-gray-600">
+                <p class="max-w-2xl mx-auto mb-10 text-xl font-medium text-gray-600" data-aos="fade-up" data-aos-delay="400">
                     "นโยบายไม่ขายฝัน ทำได้จริง<br>และพร้อมเป็นกระบอกเสียงให้พี่น้องชาวม่วงขาว"
                 </p>
-                <a href="#policies" class="px-8 py-3.5 font-medium text-white transition duration-300 shadow-lg bg-pink-500 rounded-full hover:bg-pink-600 hover:-translate-y-0.5 shadow-pink-200">
-                    อ่านนโยบายของเรา
-                </a>
+                <div data-aos="fade-up" data-aos-delay="500">
+                    <a href="#policies" class="inline-block px-8 py-3.5 font-medium text-white transition duration-300 shadow-lg bg-pink-500 rounded-full hover:bg-pink-600 hover:-translate-y-0.5 shadow-pink-200">
+                        อ่านนโยบายของเรา
+                    </a>
+                </div>
             </div>
         </header>
 
         <section id="policies" class="px-6 py-24 mx-auto max-w-7xl md:px-12">
-            <div class="mb-16 text-center">
+            <div class="mb-16 text-center" data-aos="fade-up">
                 <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">นโยบายสภานักเรียน</h2>
                 <p class="text-lg text-gray-500">8 นโยบายที่ทำได้จริง เพื่อชาวม่วง-ขาว</p>
             </div>
             
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">🚻</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">ห้องน้ำพร้อมใช้</h3>
                     <ul class="pl-5 mb-3 text-sm text-gray-600 list-disc">
@@ -83,7 +87,7 @@
                     </p>
                 </article>
 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">🛍️</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">สภาฝากขาย</h3>
                     <p class="text-sm leading-relaxed text-gray-500">
@@ -91,7 +95,7 @@
                     </p>
                 </article>
 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">♻️</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">Trash To Treasure</h3>
                     <p class="text-sm leading-relaxed text-gray-500">
@@ -99,7 +103,7 @@
                     </p>
                 </article>
 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="400">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">🗑️</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">จุดทิ้งใกล้ตัว</h3>
                     <p class="text-sm leading-relaxed text-gray-500">
@@ -107,7 +111,7 @@
                     </p>
                 </article>
 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">✨</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">Believe in us</h3>
                     <p class="mb-2 text-sm leading-relaxed text-gray-500">พวกเราพรรคพลังนักเรียน สนับสนุนทุกกิจกรรมที่ช่วยเสริมสร้างความสามารถ เพิ่มพื้นที่แสดงออก และความถนัดที่หลากหลายของแต่ละบุคคล ไม่ว่าจะเป็นกิจกรรม:</p>
@@ -119,7 +123,7 @@
                     </ul>
                 </article>
 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">💬</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">Speak up</h3>
                     <p class="text-sm leading-relaxed text-gray-500">
@@ -127,7 +131,7 @@
                     </p>
                 </article>
 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">🎸</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">ดนตรีในสวน</h3>
                     <p class="text-sm leading-relaxed text-gray-500">
@@ -135,7 +139,7 @@
                     </p>
                 </article>
 
-                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group">
+                <article class="p-8 transition duration-300 bg-white border border-gray-100 shadow-sm rounded-3xl hover:shadow-xl hover:shadow-pink-100/50 group" data-aos="fade-up" data-aos-delay="400">
                     <div class="flex items-center justify-center mb-6 text-3xl transition bg-pink-50 w-14 h-14 rounded-2xl text-pink-500 group-hover:scale-110">🔍</div>
                     <h3 class="mb-3 text-xl font-semibold text-gray-800">พี่สภาช่วยหาหน่อย</h3>
                     <p class="text-sm leading-relaxed text-gray-500">
@@ -149,19 +153,19 @@
         <section id="team" class="px-6 py-24 border-y bg-pink-50/50 border-pink-100/50">
             <div class="mx-auto max-w-6xl">
                 
-                <div class="mb-16 text-center">
+                <div class="mb-16 text-center" data-aos="fade-up">
                     <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">สมาชิกพรรค (15 คน)</h2>
                     <p class="text-lg text-gray-500">ทีมงานคุณภาพที่พร้อมรับฟังและพัฒนา</p>
                 </div>
                 
                 <div class="flex flex-col items-end justify-center gap-8 mb-16 md:flex-row">
-                    <div class="flex flex-col items-center w-full p-6 bg-white border shadow-sm rounded-3xl border-pink-50 md:w-64">
+                    <div class="flex flex-col items-center w-full p-6 bg-white border shadow-sm rounded-3xl border-pink-50 md:w-64" data-aos="fade-right" data-aos-delay="200">
                         <img src="https://i.postimg.cc/xjLRH1hY/a926a54c-77de-4c42-a0c3-5c21b9ffaf85.jpg" alt="กีต้าร์" class="object-cover w-24 h-24 mb-4 border-4 border-white rounded-full shadow-md">
                         <h4 class="font-semibold text-center text-gray-800">กรวัฒน์ เพชรตีบ<br>(กีต้าร์)</h4>
                         <p class="mt-1 text-sm font-medium text-pink-500">รองหัวหน้าพรรคคนที่ 1</p>
                     </div>
 
-                    <div class="flex flex-col items-center w-full p-8 bg-white border shadow-md transform md:-translate-y-4 rounded-3xl border-pink-100 md:w-80">
+                    <div class="flex flex-col items-center w-full p-8 bg-white border shadow-md transform md:-translate-y-4 rounded-3xl border-pink-100 md:w-80" data-aos="zoom-in" data-aos-delay="100">
                         <div class="relative mb-4 w-32 h-32">
                             <img src="https://i.postimg.cc/pd7ZQhP8/22577d43-95c1-41a7-8a15-8548c2059c4e.jpg" alt="เปียโน" class="object-cover w-full h-full border-4 border-white rounded-full shadow-lg">
                             <div class="absolute flex items-center justify-center w-10 h-10 text-lg font-bold text-white border-2 border-white rounded-full -bottom-2 -right-2 bg-pink-500">2</div>
@@ -170,18 +174,18 @@
                         <p class="mt-1 font-bold text-pink-600">หัวหน้าพรรค</p>
                     </div>
 
-                    <div class="flex flex-col items-center w-full p-6 bg-white border shadow-sm rounded-3xl border-pink-50 md:w-64">
+                    <div class="flex flex-col items-center w-full p-6 bg-white border shadow-sm rounded-3xl border-pink-50 md:w-64" data-aos="fade-left" data-aos-delay="200">
                         <img src="https://i.postimg.cc/LXwbsQJD/7f7329ae-82da-46e1-a135-846f6b2e7c2b.jpg" alt="แมน" class="object-cover w-24 h-24 mb-4 border-4 border-white rounded-full shadow-md">
                         <h4 class="font-semibold text-center text-gray-800">ปรมินทร์ จินดา<br>(แมน)</h4>
                         <p class="mt-1 text-sm font-medium text-pink-500">รองหัวหน้าพรรคคนที่ 2</p>
                     </div>
                 </div>
 
-                <div class="mb-8 text-center">
+                <div class="mb-8 text-center" data-aos="fade-up">
                     <h3 class="text-xl font-bold text-gray-800">คณะกรรมการสภานักเรียน</h3>
                 </div>
                 
-                <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+                <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="px-4 py-3 text-center transition bg-white border shadow-sm rounded-2xl border-pink-50 hover:border-pink-300">
                         <span class="block font-bold text-pink-500">คอปเตอร์</span> <span class="text-sm text-gray-600">วงศกร สุขขาว</span>
                     </div>
@@ -223,7 +227,7 @@
         </section>
 
         <section id="contact" class="flex flex-col items-center gap-12 px-6 py-24 mx-auto md:flex-row max-w-5xl md:px-12">
-            <div class="w-full text-center md:w-1/2 md:text-left">
+            <div class="w-full text-center md:w-1/2 md:text-left" data-aos="fade-right">
                 <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">ช่องทางการติดต่อ</h2>
                 <p class="mb-8 text-gray-500">
                     ตามนโยบาย <strong class="text-pink-500">Speak Up</strong> และ <strong class="text-pink-500">พี่สภาช่วยหาหน่อย</strong> พวกเราพร้อมรับฟังทุกปัญหา หากมีข้อเสนอแนะหรือต้องการแจ้งของหาย ติดต่อเราได้เลย!
@@ -237,7 +241,7 @@
                 </a>
             </div>
             
-            <div class="w-full md:w-1/2">
+            <div class="w-full md:w-1/2" data-aos="fade-left">
                 <form class="p-8 bg-white border border-gray-100 shadow-xl rounded-3xl shadow-pink-100/50">
                     <h3 class="flex items-center gap-2 mb-6 text-xl font-bold text-gray-800">
                         <i class="fa-regular fa-paper-plane text-pink-500"></i> กล่องรับความคิดเห็น
@@ -261,7 +265,7 @@
         </section>
     </main>
 
-    <footer class="py-10 text-center bg-white border-t border-pink-50">
+    <footer class="py-10 text-center bg-white border-t border-pink-50" data-aos="fade-up">
         <div class="flex items-center justify-center gap-2 mb-4 text-2xl font-bold text-gray-300">
             พลังนักเรียน 
             <span class="flex items-center justify-center w-6 h-6 text-xs text-white bg-gray-200 rounded-full">2</span>
@@ -271,5 +275,15 @@
         </p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // เริ่มต้นการใช้งาน AOS Animation
+        AOS.init({
+            once: true,       // เล่น Animation แค่ครั้งเดียวตอนเลื่อนผ่าน (ป้องกันการกระพริบตอนเลื่อนขึ้นลง)
+            offset: 100,      // ระยะห่างก่อนที่ Animation จะเริ่ม (px)
+            duration: 800,    // ความเร็วในการเล่น Animation (ms)
+            easing: 'ease-out-cubic', // รูปแบบความสมูทของการเคลื่อนไหว
+        });
+    </script>
 </body>
 </html>
